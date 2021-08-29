@@ -14,9 +14,9 @@ setup(
     packages=['tracardi_discord_webhook'],
     install_requires=[
         'tracardi_plugin_sdk',
-        'pydantic~=1.8.2',
-        'asyncio~=3.4.3',
-        'aiohttp~=3.7.4.post0'
+        'pydantic',
+        'asyncio',
+        'aiohttp'
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
