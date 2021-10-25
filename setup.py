@@ -5,15 +5,15 @@ with open("README.md", "r") as fh:
 
 setup(
     name='tracardi-discord-webhook',
-    version='0.1.2',
-    description='This plugin calls discord webhook.',
+    version='0.6.0',
+    description='This plugin sends discord messages.',
     long_description=long_description,
     long_description_content_type="text/markdown",
     author='Risto Kowaczewski',
     author_email='risto.kowaczewski@gmail.com',
     packages=['tracardi_discord_webhook'],
     install_requires=[
-        'tracardi_plugin_sdk',
+        'tracardi_plugin_sdk>=0.6.22',
         'pydantic',
         'asyncio',
         'aiohttp'

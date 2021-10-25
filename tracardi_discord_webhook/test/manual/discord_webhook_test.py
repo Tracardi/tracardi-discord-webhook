@@ -1,22 +1,15 @@
-import asyncio
 from tracardi_discord_webhook.plugin import DiscordWebHookAction
+from tracardi_plugin_sdk.service.plugin_runner import run_plugin
+init = {
+    "url": "https://discord.com/api/webhooks/902092877243494450/-55O7I7p1jERLpzA75Nz2Z-_3maFn3u7Jv2a9hjKiKoM2mpRMDzercTJhP5QOkX2BUnJ",
+    "message": "Message from Tracardi bot",
+    "username": "risto"
+}
 
+payload = {
 
+}
 
-async def main():
-    init = {
-        "url": "https://discord.com/api/webhooks/879106873004032030/kXYSPpIdV0nHCAdd9d5kh3ee1TYO6nUsU5am70hCV7fWWkUZWuE3jIocT2FpnxKuYc1R"
-    }
+result = run_plugin(DiscordWebHookAction, init, payload)
 
-    plugin = DiscordWebHookAction(**init)
-
-    payload = {
-        "content": "send message\nssdasd",
-        "username": "risto"
-    }
-
-    results = await plugin.run(payload)
-    print(results)
-
-
-asyncio.run(main())
+print(result)
