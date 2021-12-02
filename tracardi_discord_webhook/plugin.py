@@ -113,7 +113,7 @@ def register() -> Plugin:
                 )
             ]
             ),
-            version="0.6.0",
+            version="0.6.0.1",
             author="Risto Kowaczewski",
             license="MIT",
             manual="discord_webhook_action"
